@@ -38,7 +38,10 @@
 
                 </div>
                 <div class="card__add">
-                    <input id="newTask" type="text" placeholder="Enter an activity...">
+                    <div class="taskInput">
+                        <input id="newTask" type="text" placeholder="Enter an activity...">
+                        <small id="noteNewTask"></small>
+                    </div>
                     <button id="addItem">
                         <i class="fa fa-plus"></i>
                     </button>
@@ -57,25 +60,24 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <script>
-        $(function () {
-            $('.toggle-btn').click(function () {
+        $(function() {
+            $('.toggle-btn').click(function() {
                 $('.filter-btn').toggleClass('open');
 
             });
 
-            $('.filter-btn a').click(function () {
+            $('.filter-btn a').click(function() {
                 $('.filter-btn').removeClass('open');
 
             });
 
         });
     </script>
+    <script type="module" src="./js/controller/main.js"></script>
 
-    
 
 
 </body>
